@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # MongoDB connection URL from environment or default to local (for development)
-MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017")
+MONGO_URL = os.getenv("MONGO_URL", "mongodb+srv://avinash24013:231avinash@cluster0.rkrxoah.mongodb.net/?appName=Cluster0")
 DB_NAME = os.getenv("DB_NAME", "climate_resilience")
 
 class DatabaseState:
