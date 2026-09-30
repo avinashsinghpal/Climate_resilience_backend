@@ -46,3 +46,8 @@ app.include_router(alerts.router, prefix="/api/alerts", tags=["Alerts"])
 async def health_check():
     """Health check endpoint."""
     return {"status": "ok"}
+
+@app.get("/")
+async def root():
+    """Root endpoint."""
+    return {"message": "Welcome to the Climate Resilience API. Visit /docs for the API documentation."}
